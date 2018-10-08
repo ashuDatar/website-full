@@ -1,15 +1,12 @@
-# Website
-create the website
+# Website-full
+create the website fronend
 
 Clone the Website using command:
-git clone https://github.com/ashuDatar/website
+git clone https://github.com/ashuDatar/website-full
 
 move to the folder where the app is cloned on the local machine run below command:
-set flask_app=website.py
+npm install
 
-insatll the dependencies with the below command(prefer using a virtual env):
-pip install -r requirements.txt
-
-run the flask app:
-flask run
+run the app:
+npm start run
 
