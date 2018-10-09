@@ -1,13 +1,27 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Highcharts from 'highcharts'
+import HighchartsReact from 'highcharts-react-official'
 
-export default class AppWrapper extends React.Component {
-  render() {
-    return (
-      <div className='app-container'>
-        <Link to={'/home'}>Home</Link>
-        {this.props.children}
-      </div>
-    )
-  }
+
+const options = {
+  title: {
+    text: 'My chart'
+  },
+  series: [{
+    data: [1, 2, 3]
+  }]
 }
+
+
+
+const App = () => <div>
+  <HighchartsReact
+    highcharts={Highcharts}
+    options={options}
+  />
+</div>
+
+
+export default App;
+
